@@ -7,20 +7,24 @@
 * Published under an MIT License https://opensource.org/licenses/MIT
 *
 * ********** READ THIS SECTION ****************** 
-* Use all lower case for the definitions to ensure the most compatibility for all devices
+* All lower case characters must be used in the definitions below to ensure the most compatibility for all devices
 * Some keyboard emulators do not work properly with upper case or special characters that require modifier key presses
 *
 * Simply put, if you need to press the shift key to enter any of the information in the lines below, there's a chance it won't work properly
 
 */
 
-/*
-* Do not use any upper case letters here. Chromebook keyboards are emulated differently, and will not work.
-* To create CAP letters, must 'press and release' SHIFT in the code below. I.e.  Line: 177
-* May also need to adjust number of Tabs to enter wifi configuration See line 157
+/* CAP WORKAROUND
+* To create CAP letters, you must 'press' type and then 'release' SHIFT in the code section below. See example Line: 177
+* OTHER CONSIDERATIONS:
+* Depending on the device, and the initial start screen you may also need to adjust number of Tabs to enter the wifi configuration
+* See example on line 157
 */
+* ***********************************************
 
-// Define Your Domain, User, SSID & WiFi password
+/******** DEFINITIONS ***************************
+* Define here:  Your Domain, User, SSID & WiFi password (note: if CAPS are needed, see Workaround mentioned above)
+***********************************************/
 #define wifi_name "eps-devices" // Define SSID for your wireless connection. Do not use capital letters
 //wifi_pass broken into mulitple parts to allow for capitalization "eurekA13"
 #define wifi_pass1 "eurek" // part 1
@@ -31,7 +35,6 @@
 #define username "temp" // Define the user name for enrolling the device. Do not use capital letters
 #define domain "teameureka.net" // Set your domain here
 #define password "123456789" // The password for the enrollment GAFE account. Do not use capital letters
-
 
 
 // Special characters definition
